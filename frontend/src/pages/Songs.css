@@ -1,0 +1,200 @@
+.Songs-container {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.row-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px; /* Add space below heading */
+  text-align: left; /* Align the heading to the left */
+  width: 100%; /* Ensure the heading spans across the row */
+}
+
+.song-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+}
+
+.song-cover {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 97%;
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 110px; /* Position 10px from the bottom */
+  right: 10px;   /* Adjust position */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.song-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.song-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.song-artist {
+  color: #c4c4c4;
+  font-size: 1em;
+}
+
+/* Song controls container */
+.song-controls {
+  display: flex;
+  justify-content: center; /* Center controls horizontally */
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Individual control buttons */
+.control-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  padding: 5px;
+}
+
+.control-button img {
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px;
+}
+
+.control-button:hover img {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+/* Album container styles */
+.telugu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 98%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background: none;
+  color: white;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  opacity: 1.0;
+}
+
+.telugu-song {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playing-button {
+  background: none; /* No background for button */
+  border: none; /* Remove button border */
+  padding: 0;
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.playing-icon {
+  width: 50px; /* Set icon width */
+  height: 50px; /* Set icon height */
+}
+
+.playing-button:hover .playing-icon {
+  opacity: 0.8; /* Slight fade effect on hover */
+}
+/* Album header styles */
+.alb-header {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between image and title */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.alb-cover {
+  width: 200px; /* Adjust size of the cover image */
+  height: 200px; /* Ensure the image is square */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.alb-title {
+  font-size: 1.8em; /* Adjust font size for the title */
+  font-weight: bold;
+  color: white;
+}
+.telugu-song {
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Space out content */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding inside the box */
+  margin-bottom: 35px; /* Add space between each song box */
+  background-color: #df2c2c00; /* Background color for the box */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.telugu-song button {
+  background-color: transparent; /* No background for button */
+  border: none; /* Remove border */
+  color: white; /* Button text color */
+  font-size: 1em; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.telugu-song p {
+  color: white; /* Default text color */
+  margin: 0; /* Remove default margin */
+  font-size: 1em;
+  font-weight: bold; /* Set font size */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.telugu-song:hover {
+  background-color: #333; /* Brighter background when hovered */
+  transform: scale(1.02); /* Slightly enlarge the box */
+}

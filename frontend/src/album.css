@@ -1,0 +1,456 @@
+/* Album container styling */
+.album-container {
+  display: flex;
+  justify-content: center;  /* Horizontally center the search bar */
+  align-items: center;  /* Vertically center */
+  height: 100px;  /* Full viewport height */
+  background-color: #000000;  /* Dark background like Spotify */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Search bar container */
+/* Search bar container */
+.search-bar-container {
+  position: absolute; /* Position it relative to the viewport */
+  top: 7.5%;           /* Place it vertically in the center */
+  left: 50%;          /* Place it horizontally in the center */
+  transform: translate(-50%, -50%); /* Offset to center */
+  display: flex;
+  align-items: center;
+  background-color: #333; /* Dark background for the search bar */
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 300px; /* Limit the max width */
+  width: 100%;
+}
+
+
+/* Styling for the search input field */
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px 10px 10px 40px;  /* Padding to make space for the search icon inside */
+  border-radius: 25px;
+  font-size: 18px;
+  color: rgb(207, 207, 207);  /* White text */
+  background-color: transparent;  /* Transparent background to keep it consistent with Spotify */
+  width: 100%;
+}
+
+/* Search icon inside the input field */
+.search-input::before {
+  content: "\f002";  /* Font Awesome search icon unicode */
+  font-family: "Font Awesome 5 Free";  /* Font Awesome */
+  font-weight: 900;  /* Use the solid style for the icon */
+  position: absolute;
+  left: 15px;  /* Position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);  /* Center vertically */
+  color: #ad9f9f;  /* Light color for the icon */
+}
+
+/* Placeholder text style */
+.search-input::placeholder {
+  color: #bbb;  /* Light gray color for the placeholder text */
+}
+
+/* Styling for the search icon button on the right side of the input */
+.search-image {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;  /* Change cursor on hover */
+  margin-left: 10px;
+  position: absolute;
+  top: auto;
+  right: 7%;
+}
+
+/* Hover effect for the search image */
+.search-image:hover {
+  opacity: 0.7;
+}
+.top-left-logo {
+  position: absolute; /* Position relative to the viewport */
+  top: 40px;          /* Add some space from the top */
+  left: 70px;         /* Add some space from the left */
+  width: 150px;        /* Adjust the size of the image */
+  height: 60px;       /* Keep proportions */
+  cursor: pointer;    /* Optional: Add a pointer cursor */
+  z-index: 1000;      /* Ensure it appears above other elements */
+}
+/* Tooltip container */
+.tooltip-container {
+  position: absolute;
+  top: 10px; /* Position relative to contain the tooltip */
+  left: 10px;
+  display: inline-block; /* Ensure proper layout */
+}
+
+/* Tooltip text styling */
+.tooltip-text {
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Fully transparent */
+  position: absolute;
+  top: 90px;
+  left: 190px; /* Center align with the logo */
+  transform: translateX(-50%);
+  background-color: #333; /* Dark background for the tooltip */
+  color: #fff; /* White text for better contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible; /* Make tooltip visible */
+  opacity: 1; /* Fully opaque */
+}
+.side-container{
+  position:absolute;
+  top:123px;
+  left:60px;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #0c0c0c;
+}
+.icon-label {
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Font styling */
+  font-size: 16px; /* Text size */
+  color: #ffffff; /* Text color */
+  cursor: pointer;
+}
+
+/* Styling for the icon image */
+.home-icon {
+  position:absolute;
+  top: 35px;
+  left:30px;
+  width: 44px; /* Adjust the size of the image */
+  height: 44px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+
+/* Styling for the text beside the image */
+.home-text {
+  position:absolute;
+  top: 50px;
+  left:90px;
+  font-size: 19px;
+  font-style:initial;
+  font-weight: bold;
+  color: #ffffff; /* Match with the application theme */
+}
+.search-icon {
+  position:absolute;
+  top: 105px;
+  left:30px;
+  width: 40px; /* Adjust the size of the image */
+  height: 40px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+
+/* Styling for the text beside the image */
+.search-text {
+  position:absolute;
+  top: 120px;
+  left:90px;
+  font-size: 19px;
+  font-style:initial;
+  font-weight: bold;
+  color: #ffffff; /* Match with the application theme */
+}
+.side-box{
+  position:absolute;
+  top:335px;
+  left:60px;
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #0c0c0c;
+}
+.box{
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    font-family: "Helvetica Neue", Arial, sans-serif; /* Font styling */
+    font-size: 16px; /* Text size */
+    color: #ffffff; /* Text color */
+}
+.box{
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Font styling */
+  font-size: 16px; /* Text size */
+  color: #ffffff; /* Text color */
+}
+.like-icon{
+  position:absolute;
+  top: 217px;
+  left:30px;
+  width: 44px; /* Adjust the size of the image */
+  height: 44px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+.like-text {
+position:absolute;
+top:237px;
+left:90px;
+font-size: 19px;
+font-style:initial;
+font-weight: bold;
+color: #ffffff; /* Match with the application theme */
+}
+.set-icon{
+    position:absolute;
+    top: 537px;
+    left:30px;
+    width: 44px; /* Adjust the size of the image */
+    height: 44px; /* Keep proportions */
+    margin-right: 10px; /* Add space between image and text */
+}
+.set-text {
+  position:absolute;
+  top:550px;
+  left:90px;
+  font-size: 19px;
+  font-style:initial;
+  font-weight: bold;
+  color: #ffffff; /* Match with the application theme */
+}
+.playlist-text {
+  position:absolute;
+  top:10px;
+  left:20px;
+  font-size: 19px;
+  font-style:initial;
+  font-weight: bold;
+  color: #ffffff; /* Match with the application theme */
+}
+.box{
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Font styling */
+  font-size: 16px; /* Text size */
+  color: #ffffff; /* Text color */
+}
+.profile-icon{
+  position:absolute;
+  top: 469px;
+  left:30px;
+  width: 44px; /* Adjust the size of the image */
+  height: 44px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+.profile-text {
+position:absolute;
+top:480px;
+left:90px;
+font-size: 19px;
+font-style:initial;
+font-weight: bold;
+color: #ffffff; /* Match with the application theme */
+}
+.lib-icon{
+  position:absolute;
+  top: 67px;
+  left:30px;
+  width: 44px; /* Adjust the size of the image */
+  height: 44px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+.lib-text {
+position:absolute;
+top:80px;
+left:90px;
+font-size: 19px;
+font-style:initial;
+font-weight: bold;
+color: #ffffff; /* Match with the application theme */
+}
+.play-icon{
+  position:absolute;
+  top: 130px;
+  left:30px;
+  width: 49px; /* Adjust the size of the image */
+  height: 49px; /* Keep proportions */
+  margin-right: 10px; /* Add space between image and text */
+}
+.play-text {
+position:absolute;
+top:149px;
+left:90px;
+font-size: 19px;
+font-style:initial;
+font-weight: bold;
+color: #ffffff; /* Match with the application theme */
+}
+/* Songs container styling */
+.songs-container {
+  position: absolute;
+  top: 14%; /* Adjust based on where you want it to appear */
+  left: 60%;
+  transform: translateX(-50%);
+  width: 70%; /* Adjust width as needed */
+  height: 700px; /* Limit height for scrolling */
+  overflow-y: auto; /* Add scrolling if content overflows */
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+/* Song item styling */
+.song-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #333; /* Separate songs visually */
+}
+
+.song-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.song-item .song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-item .song-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.song-item .song-artist {
+  font-size: 14px;
+  color: #bbb;
+}
+/* Footer container styling */
+.footer {
+  position: absolute;
+  bottom: 35px;;
+  left: 60%; /* Align footer with the songs container */
+  transform: translateX(-50%); /* Center the footer */
+  width: 70%; /* Same width as songs container */
+  background-color: #000; /* Dark background similar to Spotify */
+  color: white; /* White text */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add padding for spacing */
+  font-size: 14px; /* Adjust font size */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Optional: Add a hover effect for footer */
+.footer:hover {
+  opacity: 1.0;
+}
+.song-controls {
+  display: flex;
+  align-items: center;
+  
+}
+
+.control-button {
+  background: transparent;
+  border: none;
+  margin:  15px; /* Increased margin for spacing */
+  cursor: pointer;
+  width: 50px; /* Increased width */
+  height: 50px; /* Increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button img {
+  width: 90px; /* Increased size of the icons */
+  height: 90px;
+  object-fit: contain; /* Increased size of the icons */
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Slight spacing from the Next button */
+}
+
+.volume-control input[type="range"] {
+  cursor: pointer;
+  width: 100px; /* Adjust slider width as needed */
+}
+
+
+.volume-control label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.volume-control input[type="range"] {
+  cursor: pointer;
+  width: 100px; /* Adjust slider width as needed */
+}
+.song-timing {
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+}
+.progress-container {
+  display: flex;
+  align-items:center;
+  width: 100%;
+  position: absolute;
+  top: 85px;
+  left:380px;
+  margin-bottom: 15px; /* Add spacing between the progress bar and buttons */
+}
+
+.progress-bar {
+  width: 30%;
+  margin-right: 10px;
+  height: 4px;
+}
+
+.time-display {
+  font-size: 12px;
+  color: #fff;
+}
+
+.song-controls {
+  display: flex;
+  align-items: center;
+}
+
+.pause-button {
+  background: transparent;
+  border: none;
+  margin: 1 10px;
+  cursor: pointer;
+}
+.previous-button {
+  background: transparent;
+  border: none;
+  margin:  10px;
+  cursor: pointer;
+}
+.next-button {
+  background: transparent;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.volume-control input {
+  width: 100px;
+}
